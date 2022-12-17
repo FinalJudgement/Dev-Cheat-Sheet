@@ -225,3 +225,34 @@ h1 {
     color: red;
     transform: rotate(15deg);
 }
+
+section.html-info {
+    width: 80%;
+    height: 500px;
+    margin: 250px auto;
+    background-color: rgba(249, 186, 255, 0.664);
+    border-radius: 2em;
+}
+
+.bubble {
+    position: absolute;
+    top: 350px;
+    left: 150px
+}
+
+.bob1 {
+    position: absolute;
+    top: 534px;
+    left: 400px
+}
+
+article.info-article {
+    margin: 3%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(146, 190, 207);
+    display: inline-block;
+    width: 43%;
+    height: 90%;
+    border-radius: 2em;
+}
