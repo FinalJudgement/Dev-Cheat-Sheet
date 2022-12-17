@@ -34,7 +34,7 @@ header h1 {
 }
 
 #nav-top {
-    background-image: linear-gradient(to right, black, transparent);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8), transparent);
     height: 46px;
     margin: 0 auto;
 
