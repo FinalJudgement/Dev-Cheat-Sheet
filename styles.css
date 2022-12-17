@@ -1,0 +1,131 @@
+:root {
+    --pink-lavender: rgb(98, 100, 241);
+    --african-violet: rgb(172, 52, 212);
+    --royal-purple: rgb(118, 49, 175);
+    --cyber-grape: rgb(104, 19, 216);
+    --dark-orchid: rgb(153, 37, 231);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(34, 34, 34);
+
+}
+
+header {
+    background-image: linear-gradient(to right, var(--pink-lavender), var(--african-violet), var(--royal-purple), var(--cyber-grape), var(--dark-orchid));
+    opacity: .9;
+}
+
+header h1 {
+    position: absolute;
+    top: 0px;
+    left: 60%;
+    font-family: "EB Garamond";
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    color: white;
+}
+
+#nav-top {
+    background-image: linear-gradient(to right, black, transparent);
+    height: 46px;
+    margin: 0 auto;
+
+}
+
+#nav-top ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+#nav-top ul li {
+    display: inline-block;
+    margin: 0 4em;
+}
+
+#nav-top ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 22px;
+    text-decoration: none;
+}
+
+#nav-top ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+nav {
+    width: 47%;
+    height: 46px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    margin: 0 5px;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover,
+.dropdown:hover .dropbtn {
+
+    border: 2px solid white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    color: white;
+}
