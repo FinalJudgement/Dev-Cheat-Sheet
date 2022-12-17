@@ -6,8 +6,15 @@ const brand = document.querySelector('.brand')
 let sticky = navbar.offsetTop;
 let h1fade = 0;
 
+let rgbHeader = () => {
 
-let rgb = (y) => {
+    h1.style.color = `rgb( ${Math.floor(Math.random() * 250) + 1},  ${Math.floor(Math.random() * 250) + 1}, ${Math.floor(Math.random() * 250) + 1})`;
+
+    setTimeout(rgbHeader, 1000)
+}
+rgbHeader()
+
+let rgbBrand = () => {
 
     if (window.scrollY == 0) {
         return false;
@@ -16,7 +23,7 @@ let rgb = (y) => {
 
     setTimeout(rgb, 1000)
 }
-rgb()
+rgbBrand()
 
 window.onscroll = () => {
 
@@ -35,7 +42,7 @@ window.onscroll = () => {
         navbar.classList.add("sticky");
         content.style = "margin-top: 45px;";
         brand.style.color = `rgba(${250}, ${250}, ${250}, ${1})`
-        rgb()
+        rgbBrand()
 
 
     } else {

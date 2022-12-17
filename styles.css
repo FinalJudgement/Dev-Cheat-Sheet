@@ -36,6 +36,7 @@ header h1 {
     width: 7em;
     color: white;
     transform: rotate(-6deg);
+    transition: color 1s;
     z-index: 10;
 }
 
