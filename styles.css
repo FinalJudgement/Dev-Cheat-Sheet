@@ -14,12 +14,14 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(34, 34, 34);
-
+    height: 1500px;
 }
 
 header {
+    position: relative;
     background-image: linear-gradient(to right, var(--pink-lavender), var(--african-violet), var(--royal-purple), var(--cyber-grape), var(--dark-orchid));
     opacity: .9;
+    z-index: 5
 }
 
 header h1 {
@@ -30,7 +32,11 @@ header h1 {
     font-style: italic;
     font-weight: 800;
     font-size: 64px;
+    text-align: center;
+    width: 7em;
     color: white;
+    transform: rotate(-6deg);
+    z-index: 10;
 }
 
 #nav-top {
@@ -62,13 +68,37 @@ header h1 {
     border-bottom: 2px solid white;
 }
 
-nav {
-    width: 47%;
+.nav-cushion {
     height: 46px;
-    margin: 0 auto;
+    width: 27%;
+    display: inline-block;
+}
+
+nav {
+    width: 100%;
+    height: 46px;
+}
+
+.brand {
+    position: relative;
+    color: rgba(255, 255, 255, 0);
+    height: 46px;
+    float: right;
+    padding-right: 200px;
+    font-family: "EB Garamond";
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    transition: color 1s;
+    z-index: 1;
+}
+
+.stye-nav {
+    background-color: rgb(0, 0, 0);
 }
 
 nav ul {
+    display: inline-block;
     list-style-type: none;
     overflow: hidden;
     text-align: center;
@@ -77,6 +107,7 @@ nav ul {
 
 nav ul li {
     float: left;
+    left: 500px;
 }
 
 nav ul li a,
@@ -124,6 +155,27 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 500px;
+}
+
+main {
+    background-color: rgb(50, 47, 53);
+    width: 65%;
+
+    margin: 0 auto;
 }
 
 h1 {
