@@ -240,7 +240,7 @@ section.html-info {
 
 .bubble {
     position: absolute;
-    bottom: 5px;
+    bottom: 20px;
     left: 140px;
 }
 
@@ -255,7 +255,6 @@ article.info-article1 {
     position: absolute;
     margin: 3%;
     padding: 0;
-    /* box-sizing: border-box; */
     background-color: rgba(250, 236, 217, 0.726);
     display: inline-block;
     width: 43%;
@@ -285,13 +284,15 @@ article.info-article2 {
 .info-article1 p {
     position: relative;
     margin-top: 110px;
-    width: 100%;
+    margin-left: 45px;
+    text-align: justify;
+    width: 80%;
 }
 
 .info-article2 ul {
     position: relative;
     padding: 40px 20px;
-    margin: 20px 110px;
+    margin: 40px 110px;
     font-size: 32px;
     list-style: none;
     text-align: center;
@@ -299,7 +300,7 @@ article.info-article2 {
 }
 
 .info-article2 ul li {
-    margin: 20px;
+    padding: 20px;
     border-bottom: 3px solid blue;
 }
 
