@@ -14,7 +14,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(34, 34, 34);
-    height: 1500px;
+
 }
 
 header {
@@ -23,6 +23,7 @@ header {
     opacity: .9;
     z-index: 5
 }
+
 
 header h1 {
     position: absolute;
@@ -179,12 +180,6 @@ main {
     margin: 0 auto;
 }
 
-h1 {
-    color: white;
-}
-
-
-
 .introduction-banner {
     margin: 0 auto;
     padding: 0;
@@ -206,6 +201,7 @@ h1 {
     bottom: 300px;
     font-size: 36px;
     z-index: 3;
+    color: white;
 }
 
 .img-cover {
@@ -256,15 +252,19 @@ section.html-info {
     width: 500px;
     height: 250px;
     background-color: white;
+    color: red;
     border-radius: 1em;
 }
 
 .quickstart h2 {
     font-size: 32px;
-    margin: 10px;
+    margin: 20px;
 }
 
-/* .quickstart p {} */
+.quickstart p {
+    font-size: 20px;
+    margin: 20px;
+}
 
 article.info-article1 {
     position: absolute;
@@ -333,17 +333,105 @@ article.info-article2 {
     border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-footer {
-    width: 65%;
+#html-tags {
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+}
+
+table {
     margin: 0 auto;
-    margin-top: 100px;
-    height: 150px;
+}
+
+.table-header h2 {
+    margin: 20px;
+}
+
+table,
+.table-header h2 {
+    text-align: center;
+
+}
+
+table,
+th,
+td {
+    border: 2px solid rgba(105, 57, 235, 0.904);
+    border-collapse: collapse;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#special-h1 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    transform: rotate(20deg);
+    font-size: 100px;
+    background-image: linear-gradient(to right, var(--pink-lavender), var(--african-violet), var(--royal-purple), var(--cyber-grape), var(--dark-orchid));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#special-h2 {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: rotate(-30deg);
+    font-size: 70px;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    animation-name: backgroundColorPalette;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%);
+    width: 65%;
+
+    height: 2.5rem;
     background-image: linear-gradient(to right, var(--pink-lavender), var(--african-violet), var(--royal-purple), var(--cyber-grape), var(--dark-orchid));
 }
 
-.footer-container {
-    width: 100%;
-    margin: 0 auto;
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.349);
+.footer-shadow {
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 2.5rem;
+}
+
+.pending {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+
+
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+        color: rgb(98, 100, 241);
+    }
+
+    25% {
+        color: rgb(172, 52, 212);
+    }
+
+    50% {
+        color: rgb(118, 49, 175);
+    }
+
+    75% {
+        color: rgb(104, 19, 216);
+
+    }
+
+    100% {
+        color: rgb(153, 37, 231);
+    }
 }

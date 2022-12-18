@@ -34,10 +34,6 @@ window.onscroll = () => {
 
     h1.style.color = `rgba(${250}, ${250}, ${250}, ${.2 / scroll})`
 
-
-
-
-
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
         content.style = "margin-top: 45px;";
