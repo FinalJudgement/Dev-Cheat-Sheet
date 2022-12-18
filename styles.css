@@ -240,13 +240,13 @@ section.html-info {
 
 .bubble {
     position: absolute;
-    bottom: 1px;
+    bottom: 5px;
     left: 140px;
 }
 
 .bob1 {
     position: absolute;
-    bottom: -140px;
+    bottom: -145px;
     left: 400px;
     z-index: 1;
 }
