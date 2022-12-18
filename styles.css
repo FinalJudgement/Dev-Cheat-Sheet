@@ -175,9 +175,7 @@ li.dropdown {
 }
 
 main {
-    background-color: rgb(50, 47, 53);
     width: 65%;
-
     margin: 0 auto;
 }
 
@@ -252,6 +250,22 @@ section.html-info {
     z-index: 1;
 }
 
+.quickstart {
+    position: absolute;
+    left: 910px;
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.quickstart h2 {
+    font-size: 32px;
+    margin: 10px;
+}
+
+.quickstart p {}
+
 article.info-article1 {
     position: absolute;
     margin: 3%;
@@ -317,4 +331,19 @@ article.info-article2 {
     background-color: rgba(105, 57, 235, 0.904);
 
     border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+footer {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 150px;
+    background-image: linear-gradient(to right, var(--pink-lavender), var(--african-violet), var(--royal-purple), var(--cyber-grape), var(--dark-orchid));
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.349);
 }
