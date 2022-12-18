@@ -227,29 +227,35 @@ h1 {
 }
 
 section.html-info {
-    width: 80%;
+    position: relative;
+    width: 1100px;
     height: 500px;
-    margin: 250px auto;
+    margin-top: 300px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -0%);
     background-color: rgba(204, 94, 255, 0.692);
     border-radius: 2em;
 }
 
 .bubble {
     position: absolute;
-    top: 350px;
-    left: 150px
+    bottom: 1px;
+    left: 140px;
 }
 
 .bob1 {
     position: absolute;
-    top: 534px;
-    left: 400px
+    bottom: -185px;
+    left: 400px;
+    z-index: 1;
 }
 
-article.info-article {
+article.info-article1 {
+    position: absolute;
     margin: 3%;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: rgba(250, 236, 217, 0.726);
     display: inline-block;
     width: 43%;
@@ -257,35 +263,47 @@ article.info-article {
     border-radius: 2em;
 }
 
-.info-article h2 {
+article.info-article2 {
+    position: absolute;
+    margin: 3%;
+    right: 1px;
+    background-color: rgba(250, 236, 217, 0.726);
+    width: 43%;
+    height: 90%;
+    border-radius: 2em;
+}
+
+.info-article1 h2 {
     position: absolute;
     padding: 40px 20px;
-    width: 342px;
+    width: 39%;
     text-align: center;
+    margin: 0 25%;
 
 }
 
-.info-article p {
-    position: absolute;
-    padding: 100px 20px;
-    width: 20%;
+.info-article1 p {
+    position: relative;
+    margin-top: 110px;
+    width: 100%;
 }
 
-.info-article ul {
-    position: absolute;
+.info-article2 ul {
+    position: relative;
     padding: 40px 20px;
     margin: 20px 110px;
     font-size: 32px;
     list-style: none;
     text-align: center;
+
 }
 
-.info-article ul li {
+.info-article2 ul li {
     margin: 20px;
     border-bottom: 3px solid blue;
 }
 
-.info-article ul li:hover {
+.info-article2 ul li:hover {
     color: white;
     transition: color 1s,
         background-color 1s,
