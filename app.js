@@ -10,7 +10,7 @@ let rgbHeader = () => {
 
     h1.style.color = `rgb( ${Math.floor(Math.random() * 250) + 1},  ${Math.floor(Math.random() * 250) + 1}, ${Math.floor(Math.random() * 250) + 1})`;
 
-    setTimeout(rgbHeader, 1000)
+    setTimeout(rgbHeader, 1000);
 }
 rgbHeader()
 
@@ -21,7 +21,7 @@ let rgbBrand = () => {
     }
     brand.style.color = `rgb( ${Math.floor(Math.random() * 250) + 1},  ${Math.floor(Math.random() * 250) + 1}, ${Math.floor(Math.random() * 250) + 1})`;
 
-    setTimeout(rgb, 1000)
+    setTimeout(rgbBrand, 1000);
 }
 rgbBrand()
 

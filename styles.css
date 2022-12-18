@@ -296,7 +296,8 @@ article.info-article2 {
     width: 39%;
     text-align: center;
     margin: 0 25%;
-    color: white;
+    font-size: 30px;
+
 }
 
 .info-article1 p {
@@ -305,20 +306,21 @@ article.info-article2 {
     margin-left: 45px;
     text-align: justify;
     width: 80%;
-    color: white;
+    font-size: 20px;
 }
 
 .info-article2 ul {
     position: relative;
     padding: 40px 20px;
     margin: 40px 110px;
-    font-size: 32px;
+    font-size: 30px;
     list-style: none;
     text-align: center;
 
 }
 
 .info-article2 ul li {
+    color: black;
     padding: 20px;
     border-bottom: 3px solid blue;
 }
@@ -334,10 +336,20 @@ article.info-article2 {
     border-bottom: 3px solid rgb(255, 255, 255);
 }
 
+.info-article2 ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-padding-space {
+    padding-top: 50px;
+}
+
 #html-tags {
     font-size: 40px;
     text-align: center;
-    margin: 50px;
+    margin-bottom: 50px;
+    color: white;
 }
 
 table {
@@ -345,6 +357,7 @@ table {
 }
 
 .table-header h2 {
+    color: white;
     margin: 20px;
 }
 
