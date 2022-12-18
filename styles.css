@@ -230,7 +230,7 @@ section.html-info {
     width: 80%;
     height: 500px;
     margin: 250px auto;
-    background-color: rgba(249, 186, 255, 0.664);
+    background-color: rgba(204, 94, 255, 0.692);
     border-radius: 2em;
 }
 
@@ -250,9 +250,48 @@ article.info-article {
     margin: 3%;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(146, 190, 207);
+    background-color: rgba(250, 236, 217, 0.726);
     display: inline-block;
     width: 43%;
     height: 90%;
     border-radius: 2em;
+}
+
+.info-article h2 {
+    position: absolute;
+    padding: 40px 20px;
+    width: 342px;
+    text-align: center;
+
+}
+
+.info-article p {
+    position: absolute;
+    padding: 100px 20px;
+    width: 20%;
+}
+
+.info-article ul {
+    position: absolute;
+    padding: 40px 20px;
+    margin: 20px 110px;
+    font-size: 32px;
+    list-style: none;
+    text-align: center;
+}
+
+.info-article ul li {
+    margin: 20px;
+    border-bottom: 3px solid blue;
+}
+
+.info-article ul li:hover {
+    color: white;
+    transition: color 1s,
+        background-color 1s,
+        border 1s;
+
+    background-color: rgba(105, 57, 235, 0.904);
+
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
