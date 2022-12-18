@@ -236,6 +236,7 @@ section.html-info {
     transform: translate(-50%, -0%);
     background-color: rgba(204, 94, 255, 0.692);
     border-radius: 2em;
+
 }
 
 .bubble {
@@ -246,7 +247,7 @@ section.html-info {
 
 .bob1 {
     position: absolute;
-    bottom: -147px;
+    bottom: -149px;
     left: 400px;
     z-index: 1;
 }
@@ -260,6 +261,7 @@ article.info-article1 {
     width: 43%;
     height: 90%;
     border-radius: 2em;
+    box-shadow: 5px 15px 12px;
 }
 
 article.info-article2 {
@@ -270,6 +272,8 @@ article.info-article2 {
     width: 43%;
     height: 90%;
     border-radius: 2em;
+    box-shadow: 5px 15px 12px;
+
 }
 
 .info-article1 h2 {
