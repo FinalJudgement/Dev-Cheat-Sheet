@@ -23,10 +23,10 @@ let rgbBrand = () => {
 
     setTimeout(rgbBrand, 1000);
 }
-rgbBrand()
+
 
 window.onscroll = () => {
-
+    rgbBrand()
     let scroll = window.scrollY / 50
 
 
